@@ -20,7 +20,7 @@ title                    : "Anuj Shah"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Anuj Shah"
-description              : "An amazing website."
+description              : "Personal Website"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Anuj Shah"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "M.Tech student at IIIT Bangalore | Interested in Machine Learning, Artificial Intelligence, Speech Recognition"
   location         : "Bangalore, India"
   email            :
   links:
