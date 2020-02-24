@@ -2,6 +2,7 @@
 layout: single
 title: "About"
 permalink: /about/
+author_profile: true
 ---
 
 I am Anuj Shah. Currently I am in my final semester at IIIT Bangalore.
