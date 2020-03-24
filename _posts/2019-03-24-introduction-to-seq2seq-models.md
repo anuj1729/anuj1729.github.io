@@ -45,7 +45,7 @@ h<sub>t + 1</sub> = f(h<sub>t</sub>,x<sub>t + 1</sub>)
 
 At time step N, the encoder generates the hidden vector *h<sub>N</sub>*. The main idea is: this hidden vector *h<sub>N</sub>* is a summary of all the input vectors *x<sub>1</sub>...x<sub>N</sub>*. This is also called the ***context vector***. The decoder then uses this context vector to generate the desired output sequence.
 
-We feed a special *\<sos\>*(start of sequence) symbol to the decoder along with the context vector, to start generating output symbols y<sub>i</sub>. The next symbol *y<sub>i + 1</sub>* is a function of the decoder state *s<sub>i + 1</sub>* and *y(<sub>i</sub>*.
+We feed a special *\<sos\>*(start of sequence) symbol to the decoder along with the context vector, to start generating output symbols y<sub>i</sub>. The next symbol *y<sub>i + 1</sub>* is a function of the decoder state *s<sub>i + 1</sub>* and *y<sub>i</sub>*.
 
 *y<sub>i + 1</sub> = f(y<sub>i</sub>,s<sub>i + 1</sub>)*
 
