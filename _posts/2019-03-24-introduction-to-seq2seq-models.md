@@ -1,4 +1,4 @@
-s
+
 Sequence to sequence(seq2seq) learning is a powerful idea in deep learning. At it's core it is a simple idea. The idea of sequence to sequence learning is
 
 > To map an input sequence of given length, to an output sequence. 
