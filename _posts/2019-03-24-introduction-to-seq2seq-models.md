@@ -32,30 +32,30 @@ The reasons why we need a new architecture are:-
 
 Let's define some terms before understanding the architecture
 
-*X=(x1,x2,...,xN)* is the input vector sequence  
-*Y=(y1,y2,...yM)* is the output vector sequence  
-*H = (h1,h2,...hN)* is the hidden vector sequence
+*X=(x<sub>1</sub>,x<sub>2</sub>,...,x<sub>N</sub>)* is the input vector sequence  
+*Y=(y<sub>1</sub>,y<sub>2</sub>,...y<sub>M</sub>)* is the output vector sequence  
+*H = (h<sub>1</sub>,h<sub>2</sub>,,...h<sub>N</sub>)* is the hidden vector sequence
 
-![Encoder Decoder](~/Anuj/personal_website/anuj1729.github.io/temp_images/encoder_decoder_architecture.png)
+![Encoder Decoder](../images/encoder_decoder_architecture.png)
 
-The encoder is a RNN(LSTM,GRU,etc). The encoder tries to summarize the input it has seen. At time step *t*, the encoder has a hiddent state *ht*. Think of *ht* as a summary of all the inputs till time *t* with an emphasis on the input vector *xt*.
+The encoder is a RNN(LSTM,GRU,etc). The encoder tries to summarize the input it has seen. At time step *t*, the encoder has a hiddent state *h<sub>t</sub>*. Think of *h<sub>t</sub>* as a summary of all the inputs till time *t* with an emphasis on the input vector *x<sub>t</sub>*.
 
 The hidden vector at any time is a function of the current input vector and the previous hidden vector:
-h(t + 1) = f(ht,xt + 1)
+h<sub>t + 1</sub> = f(h<sub>t</sub>,x<sub>t + 1</sub>)
 
-At time step N, the encoder generates the hidden vector *hN*. The main idea is: this hidden vector *hN* is a summary of all the input vectors *x1...xN*. This is also called the ***context vector***. The decoder then uses this context vector to generate the desired output sequence.
+At time step N, the encoder generates the hidden vector *h<sub>N</sub>*. The main idea is: this hidden vector *h<sub>N</sub>* is a summary of all the input vectors *x<sub>1</sub>...x<sub>N</sub>*. This is also called the ***context vector***. The decoder then uses this context vector to generate the desired output sequence.
 
-We feed a special *\<sos\>*(start of sequence) symbol to the decoder along with the context vector, to start generating output symbols y(i). The next symbol *y(i + 1)* is a function of the decoder state *s(i + 1)* and *y(i)*.
+We feed a special *\<sos\>*(start of sequence) symbol to the decoder along with the context vector, to start generating output symbols y<sub>i</sub>. The next symbol *y<sub>i + 1</sub>* is a function of the decoder state *s<sub>i + 1</sub>* and *y(<sub>i</sub>*.
 
-*y(i + 1) = f(y(i),s(i + 1))*
+*y<sub>i + 1</sub> = f(y<sub>i</sub>,s<sub>i + 1</sub>)*
 
-The decoder state s(i + 1) is further a function of the previous state and the previous output.
+The decoder state s<sub>i + 1</sub> is further a function of the previous state and the previous output.
 
-*s(i + 1) = g(y(i),s(i))*
+*s<sub>i + 1</sub> = g(y<sub>i</sub>,s<sub>i</sub>)*
 
 **g()** is a function that the decoder learns to update it's hidden state.
 
-The decoder keeps generating output till it finally predicts a special *\<eos\>*(end of sequence) token. Thus the decoder generates the output sequence *Y=(y1,y2,...yM)*
+The decoder keeps generating output till it finally predicts a special *\<eos\>*(end of sequence) token. Thus the decoder generates the output sequence *Y=(y<sub>1</sub>,y<sub>2</sub>,...y<sub>M</sub>)*
 
 
 
