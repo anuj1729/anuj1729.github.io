@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 ---
 
-I am Anuj Shah. Currently I am in my final semester at IIIT Bangalore.
+I am Anuj Shah. I am in my final semester at IIIT Bangalore.
 
 Currently I am doing a thesis on Language Independent end-to-end Speech Recognition.
 
