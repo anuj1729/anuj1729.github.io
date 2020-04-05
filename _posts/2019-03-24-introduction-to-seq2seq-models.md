@@ -14,7 +14,6 @@ In a lot of cases NMT outperforms traditional Statistical Machine Translation ap
 
 2) Speech recognition:- Speech recognition is also a sequence to sequence problem, where the input is a feature vector sequence and the output is the desired word sequence.
 
-3) Video Captioning:- Seq2Seq models have been used to achieve great results on various video captioning tasks.
 
 ## Why is seq2seq learning needed
 
@@ -31,7 +30,7 @@ The reasons why we need a new architecture are:-
 
 Let's define some terms before understanding the architecture
 
-*X=($$x_1$$, $x_2$ ... $x_N$)* is the input vector sequence  
+*X=($$x_1$$,$$x_2$$ ... $$x_N$$)* is the input vector sequence  
 *Y=($y_1$,$y_2$, ... $y_M$)* is the output vector sequence  
 *H = ($h_1$,$h_2$ ... $h_N$)* is the hidden vector sequence
 
