@@ -31,7 +31,7 @@ The reasons why we need a new architecture are:-
 
 Let's define some terms before understanding the architecture
 
-*X=($x_1$, $x_2$ ... $x_N$)* is the input vector sequence  
+*X=($$x_1$$, $x_2$ ... $x_N$)* is the input vector sequence  
 *Y=($y_1$,$y_2$, ... $y_M$)* is the output vector sequence  
 *H = ($h_1$,$h_2$ ... $h_N$)* is the hidden vector sequence
 
@@ -45,7 +45,7 @@ $$h_{t+1}=f(h_t,x_t)$$
 
 At time step N, the encoder generates the hidden vector $h_N$. The main idea is: this hidden vector $h_N$ is a summary of all the input vectors $x_1$, $x_2$ ... $x_N$. This is also called the ***context vector***. The decoder then uses this context vector to generate the desired output sequence.
 
-We feed a special $<sos>$ (start of sequence) symbol to the decoder along with the context vector, to start generating output symbols $y_i$. The next symbol $y_{i + 1}$ is a function of the decoder state $s_{i + 1}$ and $y_i$.
+We feed a special $<sos>$ (start of sequence) symbol to the decoder along with the context vector, to start generating output symbols $$y_i$$. The next symbol $y_{i + 1}$ is a function of the decoder state $s_{i + 1}$ and $y_i$.
 
 $$y_{i + 1}=f(y_i,s_{i + 1})$$
 
