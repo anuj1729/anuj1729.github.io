@@ -30,7 +30,9 @@ The reasons why we need a new architecture are:-
 
 Let's define some terms before understanding the architecture
 
-*X=($$x_1$$ ,$$x_2$$ ... $$x_N$$)* is the input vector sequence  
+$$x_1$$
+
+*X=($$x_1$$ , $$x_2$$ ... $$x_N$$)* is the input vector sequence  
 *Y=($y_1$,$y_2$, ... $y_M$)* is the output vector sequence  
 *H = ($h_1$,$h_2$ ... $h_N$)* is the hidden vector sequence
 
