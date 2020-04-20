@@ -47,19 +47,19 @@ $$s_i=g(y_{i - 1}, s_{i - 1}, C_i)$$
 The context vector $C_i$ is a linear combination of all the hidden state vectors $h_1$,$h_2$,,...$h_N$. 
 Mathematically,
 
-$$C_i=\sum_{j=1}^N\alpha_{ij}h_i$$(1)
+$$C_i=\sum_{j=1}^N\alpha_{ij}h_i$$ (1)
 
 Equation (1) basically means that the context vector is a weighted sum of all the hidden vectors with the $\alpha_{ij}$ being the weight assigned to the $i^{th}$ hidden vector $h_i$.   
 
-$$\alpha_{ij}=\frac{\exp(e_{ij})}{\sum_{k=1}^N\exp(e_{ik})}$$(2)
+$$\alpha_{ij}=\frac{\exp(e_{ij})}{\sum_{k=1}^N\exp(e_{ik})}$$ (2)
 
 <br>
 
-$$\alpha_{ij}=Softmax(e_{ij})$$(3)
+$$\alpha_{ij}=Softmax(e_{ij})$$ (3)
 
 <br>
 
-$$\sum_{j=1}^N\alpha_{ij}=1$$(4)
+$$\sum_{j=1}^N\alpha_{ij}=1$$ (4)
 
 <br>
 
