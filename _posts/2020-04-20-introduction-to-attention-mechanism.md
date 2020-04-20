@@ -28,9 +28,9 @@ The attention mechanism solves the problem of generating a relevant context vect
 
 For example:- Suppose we are building a model for speech recognition. The utterance is "Show me the map of Mumbai". Now if we were to use a plain vanilla seq2seq model we can't assign importance to the hidden states based on the time step. It's clear that for generating the first word the initial hidden vectors are more important than the later ones. Since the plain seq2seq model uses only the final hidden vector as the context vector, it can't selectively focus on the relevant input. On the other hand during the initial time steps, the attention mechanism can assign more importance to the first few hidden vectors to generate a context vector. It can generate a better context vector to predict the output.
 
-The image below is the summary of the attention mechanism:-
-
 ![Encoder Decoder](../images/att_mechanism.png)
+
+
 
 Instead of using only the $h_N$ as the context vector, the decoder combines all the hidden states $h_1$,$h_2$,,...$h_N$ to generate a context vector $C_i$. This context vector is used to generate the output at the $i^{th}$ time step. 
 
@@ -64,5 +64,7 @@ $$\sum_{j=1}^N\alpha_{ij}=1$$
 <br>
 
 $$e_{ij}=a(s_{i - 1},h_j)$$ 
+
+$e_{ij}$ is the importance that is assigned to the $j^{th}$ hidden vector at time step i. The actual weight assigned to the vector is $Softmax(e_{ij})$.
 
 $a$ is an alignment function(also known as compatibility function) that computes the the importance of a hidden vector $h_j$ with the decoder state $s_{i - 1}$.The main difference between the different kinds of attention mechanisms is the alignment function $a$ . 
