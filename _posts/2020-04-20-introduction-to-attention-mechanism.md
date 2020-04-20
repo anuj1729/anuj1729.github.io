@@ -1,4 +1,3 @@
-# Attention mechanism in seq2seq models
 
 In the previous post we saw sequence to sequence models and how they are used for a variety of tasks. In this post we will discuss the attention mechanism, which is an extension to sequence to sequence models.
 
