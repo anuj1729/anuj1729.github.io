@@ -47,22 +47,22 @@ $$s_i=g(y_{i - 1}, s_{i - 1}, C_i)$$
 The context vector $C_i$ is a linear combination of all the hidden state vectors $h_1$,$h_2$,,...$h_N$. 
 Mathematically,
 
-$$C_i=\sum_{j=1}^N\alpha_{ij}h_i$$ (1)
+$$C_i=\sum_{j=1}^N\alpha_{ij}h_i$$ 
 
-Equation (1) basically means that the context vector is a weighted sum of all the hidden vectors with the $\alpha_{ij}$ being the weight assigned to the $i^{th}$ hidden vector $h_i$.   
+The above equation basically means that the context vector is a weighted sum of all the hidden vectors with the $\alpha_{ij}$ being the weight assigned to the $i^{th}$ hidden vector $h_i$.   
 
-$$\alpha_{ij}=\frac{\exp(e_{ij})}{\sum_{k=1}^N\exp(e_{ik})}$$ (2)
-
-<br>
-
-$$\alpha_{ij}=Softmax(e_{ij})$$ (3)
+$$\alpha_{ij}=\frac{\exp(e_{ij})}{\sum_{k=1}^N\exp(e_{ik})}$$ 
 
 <br>
 
-$$\sum_{j=1}^N\alpha_{ij}=1$$ (4)
+$$\alpha_{ij}=Softmax(e_{ij})$$ 
 
 <br>
 
-$$e_{ij}=a(s_{i - 1},h_j)$$ (5)
+$$\sum_{j=1}^N\alpha_{ij}=1$$
+
+<br>
+
+$$e_{ij}=a(s_{i - 1},h_j)$$ 
 
 $a$ is an alignment function(also known as compatibility function) that computes the the importance of a hidden vector $h_j$ with the decoder state $s_{i - 1}$.The main difference between the different kinds of attention mechanisms is the alignment function $a$ . 
