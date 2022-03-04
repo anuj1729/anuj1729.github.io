@@ -5,12 +5,6 @@ permalink: /about/
 author_profile: true
 ---
 
-I am Anuj Shah. I am in my final semester at IIIT Bangalore.
+Hey there, my name is Anuj. I'm a software engineer on the Microsoft To Do team where I work on the backend developing RESTful APIs that are used by clients to power their tasks experiences. I am interested in developing software systems with a focus on clean code and good design. Prior to my full time stint at Microsoft I was also an intern here where I was part of the Microsoft Visio team. 
 
-Currently I am doing a thesis on Language Independent end-to-end Speech Recognition.
-
-I am trying to build an end-to-end system which can recognize multiple languages thus replacing the need for a different system for each language. Such a system can be particularly useful for low resource languages. This system can perform better than language dependent systems because low resource languages can benefit from the acoustic data of high resource languages.
-
-I am interested in the field of Machine Learning and AI in general. I have been a Teaching Assistant for the course Machine Learning at IIIT Bangalore. My other academic interests include Algorithms and Data Structures. 
-
-Previously, I was a Software Developer Intern at Microsoft IDC, Hyderabad where I was a part of the Microsoft Visio team.
+Besides developing backend systems I also have some experience working with Machine Learning systems. As part of my M.Tech at IIIT Bangalore I specialized in the Data Science domain. For my master's thesis I developed a multilingual ASR (automatic speech recognition) system. This language independent system gives performance very similar to it's corresponding language dependent counterpart. This ASR system is also capable of decoding code-mixed speech despite seeing no such speech during it's training.
